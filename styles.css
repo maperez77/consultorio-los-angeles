@@ -91,9 +91,11 @@ body {
 }
 
 .hero-logo {
-    width: min(500px, 90vw);
-    height: auto;
-    opacity: 0.9;
+    width: 500px;      /* tamaño horizontal */
+    height: auto;      /* mantiene proporción */
+    opacity: 1.0;      /* transparencia */
+    border-radius: 12px; /* opcional */
+    display: block;
 }
 
 .hero-grid {
