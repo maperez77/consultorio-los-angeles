@@ -166,18 +166,17 @@ body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--text
     }
 }
 .gallery-card{
-    background:white;
-    border-radius:22px;
     overflow:hidden;
-    box-shadow:var(--shadow);
+    padding:0;
 }
 
 .gallery-photo{
     width:100%;
-    display:block;
+    aspect-ratio:16/9;
     height:auto;
+    display:block;
+    object-fit:cover;
 }
-
 .gallery-card h3{
     margin:16px;
     color:var(--blue-dark);
@@ -213,10 +212,17 @@ body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--text
     font-weight:700;
     z-index:10;
 }
-@media(max-width:768px){
-    .hero-slider img{
-    aspect-ratio:16/6;
+.hero-photo{
     width:100%;
-    height:auto;
-  } 
+    height:350px;
+    object-fit:cover;
+    object-position:center;
+    border-radius:16px;
+    display:block;
+}
+
+@media(max-width:768px){
+    .hero-photo{
+        height:220px;
+    }
 }
