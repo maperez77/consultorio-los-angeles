@@ -43,9 +43,12 @@
 
   <main>
     <section id="inicio" class="hero">
-      <div class="hero-cover">
-        <img src="fachada.png" alt="Clínica Los Ángeles">
-      </div>
+      
+<div class="hero-slider">
+    <span id="sliderLabel">Instalación actual</span>
+    <img id="heroImage" src="fachada.png" alt="Consultorio Los Ángeles">
+</div>
+
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="badge">Consultorio médico en Luvianos</span>
@@ -252,5 +255,18 @@
       <p>Luvianos, Estado de México</p>
     </div>
   </footer>
+
+<script>
+const slides = [
+ {src:"fachada.png",label:"Instalación actual"},
+ {src:"Imagenes/fachada_propuesta.png",label:"Propuesta de clínica"}
+];
+let current=0;
+setInterval(()=>{
+ current=(current+1)%slides.length;
+ document.getElementById("heroImage").src=slides[current].src;
+ document.getElementById("sliderLabel").textContent=slides[current].label;
+},4000);
+</script>
 </body>
 </html>
