@@ -118,3 +118,15 @@ body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--text
   .section{padding:58px 0}
   .floating-whatsapp{left:16px;right:16px;text-align:center}
 }
+.hero-cover{
+    width:100%;
+    height:450px;
+    overflow:hidden;
+}
+
+.hero-cover img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
