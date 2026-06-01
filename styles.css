@@ -215,6 +215,8 @@ body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--text
 }
 @media(max-width:768px){
     .hero-slider img{
-        height:280px;
-    }
+    aspect-ratio:16/6;
+    width:100%;
+    height:auto;
+  } 
 }
