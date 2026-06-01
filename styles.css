@@ -87,7 +87,7 @@ body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--text
 .benefit-list{display:grid;gap:12px}
 .benefit{padding:16px 18px;color:var(--blue-dark);font-weight:700}
 
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:24px}
 .photo-placeholder{min-height:220px;border-radius:22px;display:grid;place-items:center;text-align:center;padding:24px}
 
 .contact-section{background:linear-gradient(180deg,#ffffff 0%,var(--blue-soft) 100%)}
@@ -139,4 +139,28 @@ body{margin:0;font-family:"Segoe UI",Arial,Helvetica,sans-serif;color:var(--text
         height:auto;
         object-fit:contain;
     }
+}
+
+.gallery-card{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.gallery-photo{
+    width:100%;
+    display:block;
+    height:auto;
+}
+
+.gallery-card h3{
+    margin:16px;
+    color:var(--blue-dark);
+}
+
+.gallery-card p{
+    margin:0;
+    padding:0 16px 16px 16px;
+    color:var(--muted);
 }
